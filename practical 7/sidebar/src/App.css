@@ -1,0 +1,66 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  border: 5px solid #cfdffe;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  width: 50px;
+  min-height: 100%;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.sidebar.open {
+  width: 200px;
+  background-color: #b8a9f4;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  padding: 0 10px;
+}
+
+.menu button {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #d1c4e9;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
