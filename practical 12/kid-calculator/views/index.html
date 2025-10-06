@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1> Kids Calculator</h1>
+        
+        <form action="/calculate" method="POST">
+            <div class="input-group">
+                <label>First Number:</label>
+                <input type="number" name="num1" required>
+            </div>
+            
+            <div class="input-group">
+                <label>Choose Operation:</label>
+                <div class="operations">
+                    <label><input type="radio" name="operation" value="add" checked> ➕ Add</label>
+                    <label><input type="radio" name="operation" value="subtract"> ➖ Subtract</label>
+                    <label><input type="radio" name="operation" value="multiply"> ✖️ Multiply</label>
+                    <label><input type="radio" name="operation" value="divide"> ➗ Divide</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label>Second Number:</label>
+                <input type="number" name="num2" required>
+            </div>
+            
+            <button type="submit">Calculate!</button>
+        </form>
+    </div>
+</body>
+</html>
